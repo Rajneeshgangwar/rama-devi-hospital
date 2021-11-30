@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       
+     
+      .head{
+          display: flex;
+          background-color: black;
+          color: aliceblue;
+          list-style-type: none;
+          align-items: center;
+          
+          
+      }
+      .logo img{
+          width: 100px;
+          height: 70px;
+      }
+      .head li h1{
+          font-size: 40px;
+          font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          border: 1px ridge rgb(204, 194, 194);
+          border-radius: 10px;
+           padding:2px;
+          background-color: blue;
+      }
+      .nav{
+          list-style-type: none;
+          display: flex;
+          padding: 20px;
+          background-color: rgb(45, 214, 45);
+          align-items: center;
+      }
+      .nav li a{
+          text-decoration: none;
+          padding: 10px;
+          color: azure;
+          background-color: rgb(5, 5, 5);
+          border: 5px rigid rgb(255, 255, 255)5);
+           border-radius: 20px;
+           transition: 0.8s;
+           
+           
+       }
+       .nav-bar li{
+           margin: 5px;
+           
+        }
+        .nav li a:hover{
+              background-color: rgb(78, 78, 97);
+        }
+        .nav li input{
+            
+            width: 250px;
+            height:40px;
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 20px;
+            margin-left: 300px;
+        
+
+        }
+        .nav li i{
+            padding: 10px;
+            cursor: pointer;
+        }
+        .login a{
+            padding: 0px;
+           
+            color: beige;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+        .login a:hover{
+            color: blueviolet;
+        }
+        .slide{
+            width: 80%;
+            height:400px;
+            position: absolute;
+            background-image:url('image1.jpg');
+            background-size: 75%;
+            background-repeat:no-repeat ;
+        
+            margin: 15% 20%;
+            animation: slider 10s infinite  ;
+        }
+        @keyframes slider{
+            0%{background-image:url('image1.jpg'); }
+            35%{background-image: url('image2.jpeg'); }
+            75%{background-image: url('image3.jpg'); }
+        }
+        .emergency a{
+            text-decoration: none;
+            float:right;
+            padding:20px;
+            background-color: red;
+            margin-right: 10px;
+            margin-top:10px;
+            border: 1px ridge red;
+            border-radius: 20px;
+            font-family: sans-serif;
+            font-size: 20px;
+            color:white;
+            animation: emen 2s infinite;
+        }
+        @keyframes emen{
+            0%{background-color:red;}
+            50%{ background-color:brown;}
+            75%{background-color: blue;}
+            
+        }
+    .emergency a i{
+      margin-left: 10px;
+    }
+.doc{
+    display:none;
+    
+}
+.nav li:hover .doc {
+            
+            display: block;
+            position: absolute;
+        }
+        .nav li:hover .doc ul li{
+            margin-top: 30px;
+            list-style-type:none;
+        }
+       
+    
+        
+        
+       
+    </style>
+</head>
+<body>
+    <div class="slide">
+    </div>
+    <div class="container">
+        
+        <ul class="head">
+            <li class="logo"><img src="logo.png"></li>
+            <li><h1 style="margin-left: 360px;">RAMA DEVI HOSPITAL</h1></li>
+            <li class="logo"><img style="margin-left: 340px;"src="logo.png"></li>
+        </ul>
+        <div class="nav-bar">
+             <ul class="nav">
+                 <li><a href="#">HOME</a></li>
+                 <li><a href="#">ABOUT</a></li>
+                 <li><a href="#">SPECIALITIES</a>
+                  <div class="doc">
+                      <ul>
+                          <li><a href="#">X-RAY</a></li>
+                          <li><a href="#">ICU</a></li>
+                          <li><a href="#">ULTRASOUND</a></li>
+                          <li><a href="#">LABORATORIES</a></li>
+                          <li><a href="#">MRI</a></li>
+                          <li><a href="#">DENTAL</a></li>
+
+                      </ul>
+                  </div>
+                </li>
+                 <li><a href="#">DOCTORS</a>
+                    <div class="doc">
+                        <ul>
+                            <li><a href="#">Dr.Pradeep Kumar Patel</a></li>
+                            <li><a href="#">Dr.R.C. Patel</a></li>
+                            <li><a href="#">Dr.Indiramani Prakash</a></li>
+                            <li><a href="#">Dr.Smt. S. Patel</a></li>
+                           
+
+                        </ul>
+                    </div>
+                  </li>
+                 <li><a href="#">CONTACT US</a></li>
+                 <li><input type="search" placeholder="search here" ><i class="fas fa-search"></i></li>
+                 <li class="login"><a style="background-color: rgb(45,214,45);" href="#">Login</a></li>
+                 <li class="login"><a style="background-color: rgb(45,214,45);" href="#">Sign Up</a></li>
+            </ul>
+           </div>
+           
+            <div class="emergency">
+                <a href="#">EMERGENCY<i class="fas fa-phone-square-alt"></i></a>
+            </div>
+            
+
+
+    </div>
+    
+    <script src="https://kit.fontawesome.com/46dfa023e8.js" crossorigin="anonymous"></script>
+    <footer>
+        <p>ramadevihospital@gmail.com</p>
+    </footer>
+</body>
+</html>
